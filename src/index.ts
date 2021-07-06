@@ -84,7 +84,7 @@ function QrCodePix({
 }
 
 function generateKey(key: string, message?: string): string {
-    const payload: string[] = [genEMV('00', 'BR.GOV.BCB.PIX'), genEMV('01', key)];
+    const payload: string[] = [genEMV('00', 'br.gov.bcb.pix'), genEMV('01', key)];
     if (message) {
         payload.push(genEMV('02', message));
     }
